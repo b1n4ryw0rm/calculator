@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="calc.css" rel="stylesheet">
+    <script src="calc.js"></script>
+</head>
+<body>
+    
+
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calculator" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <div class="main-body">
+        <div class="calc">
+            <div class="output">
+                <input type="text" id="screen">
+
+            </div>
+            <div>
+                <div class="row">
+                    <button onclick="clearDisplay()" class="btn">clr</button>
+                    <button onclick="erase()" class="btn">del</button>
+                </div>
+                
+
+                <div class="row">
+                    <button onclick="bclick(7)" class="btn">7</button>
+                    <button onclick="bclick(8)" class="btn">8</button>
+                    <button onclick="bclick(9)" class="btn">9</button>
+                    <button onclick="bclick('/')" class="btn">/</button>
+    
+                </div>
+                <div class="row">
+                    <button onclick="bclick(4)" class="btn">4</button>
+                    <button onclick="bclick(5)" class="btn">5</button>
+                    <button onclick="bclick(6)" class="btn">6</button>
+                    <button onclick="bclick('*')" class="btn">x</button>
+    
+    
+                </div>
+                <div class="row">
+                    <button onclick="bclick(1)" class="btn">1</button>
+                    <button onclick="bclick(2)" class="btn">2</button>
+                    <button onclick="bclick(3)" class="btn">3</button>
+                    <button onclick="bclick('-')" class="btn">-</button>
+    
+    
+                </div>
+                <div class="row">
+                    <button onclick="bclick('.')" class="btn">.</button>
+                    <button onclick="bclick(0)" class="btn">0</button>
+                    <button onclick="bclick('+')" class="btn">+</button>
+                    <button onclick="equalClick()" class="btn">=</button>
+    
+    
+                </div>
+            </div class="buttons">
+
+
+        </div>
+
+    </div>
+</body>
+</html>
